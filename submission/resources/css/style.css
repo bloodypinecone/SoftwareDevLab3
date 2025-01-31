@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Image and Text Section */
+.image-text {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image-text img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+
+/* Container for Hobby Cards */
+.hobby-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+/* Hobby Card Styles */
+.hobby-card {
+    width: 200px;
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hobby-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hobby-card h3 {
+    margin: 10px 0;
+}
+
+.hobby-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+.carousel-caption {
+    color: black; 
+    position:fixed; 
+    padding: 30px;
+    background-color: white;    
+}
+
+/* Carousel Styles */
+.carousel-item img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        padding: 8px 0;
+    }
+
+    .carousel-item img {
+        height: 200px; /* Adjust image height for smaller screens */
+    }
+}
+
+/* Smaller devices (mobile) */
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 180px; /* Adjust further for smaller screens */
+    }
+}
+
